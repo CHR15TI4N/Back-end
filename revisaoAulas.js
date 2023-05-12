@@ -11,17 +11,35 @@ let person = {
 
 console.log(person.name)
 console.log(person["name"])
-console.log()
+console.log()   
 
 
 let names = ["Christian", "Joao", "Pedro", "Kauan"]//é um objeto tambem
-function teste(names) {
-    for(let name of Object.values(person)){
+/*function teste(names) {
+    for(let name of names/*Object.values(person)){
         console.log(name)
     }
+}*/
+const callback = ((name, idx, array) => {
+    console.log(idx, name, array)
+})
+
+names.forEach(callback);
+
+//callbacks
+/*function callback(value){
+    console.log(value);
+}*/
+
+const sum = (a, b, fn) => {
+    const result = a + b;
+    fn(result)
 }
 
-teste(names);
+console.log()
+sum(1, 2, (result) => {
+    console.log(result)
+})
 
 
 
