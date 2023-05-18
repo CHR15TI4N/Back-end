@@ -26,12 +26,17 @@ const callback = ((name, idx, array) => {
 
 names.forEach(callback);
 
+const namesObj = names.map((name) => name)
+
+namesObj.push("Vardeci")
+console.log(namesObj, names)
+
 //callbacks
 /*function callback(value){
     console.log(value);
 }*/
 
-const sum = (a, b, fn) => {
+/*const sum = (a, b, fn) => {
     const result = a + b;
     fn(result)
 }
@@ -39,8 +44,7 @@ const sum = (a, b, fn) => {
 console.log()
 sum(1, 2, (result) => {
     console.log(result)
-})
-
+})*/
 
 
 /*function valorIgual10(num) {//cases
@@ -55,3 +59,5 @@ sum(1, 2, (result) => {
 }
 
 console.log(valorIgual10(10))*/
+
+
