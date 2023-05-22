@@ -10,19 +10,18 @@ console.log("antes")
 
 const asyncTimeout = async () => {
     try {
-        await minhaFuncao()
+        await findUserNovo()
         const teste1 = await timeoutWithPromise()
-        console.log(teste1)    
+        console.log("findUser")    
     } catch (error) {
         console.log(error)
     }
     
 }
 
-async function minhaFuncao() {
+async function findUserName() {
     try {
         const result = await timeoutWithPromise()
-        console.log(result)
     } catch (error) {
         console.log(error)
     }

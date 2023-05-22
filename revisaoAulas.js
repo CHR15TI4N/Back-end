@@ -26,10 +26,17 @@ const callback = ((name, idx, array) => {
 
 names.forEach(callback);
 
-const namesObj = names.map((name) => name)
+/*const namesObj = names.map((name) => name)
 
 namesObj.push("Vardeci")
-console.log(namesObj, names)
+console.log(namesObj, names)*/
+
+const pedro = {
+    ...person,
+    name: "Pedro",
+    dogName: "Carrocho"
+}
+console.log(pedro)
 
 //callbacks
 /*function callback(value){
